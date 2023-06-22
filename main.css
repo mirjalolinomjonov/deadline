@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  place-content: center;
+  background: #1a1a1a;
+  min-height: 100vh;
+}
+
+.promotion__timer {
+  width: max-content;
+  background: #242424;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.promotion__timer .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, .87);
+}
+
+.promotion__timer .timer {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.promotion__timer .timer__block {
+  width: max-content;
+  height: 120px;
+  padding: 0 12px;
+  color: #525252;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.promotion__timer .timer__block span {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 56px;
+  font-weight: 700;
+  color: #262626;
+}
+
+/* CONGURATULATION */
+.conguratulation{
+  width: 100%;
+  margin-top: 1rem;
+  display: none;
+}
+
+.conguratulation__img{
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.conguratulation__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conguratulation__caption{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, .87);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.conguratulation__caption p {
+  font-weight: 600;
+}
