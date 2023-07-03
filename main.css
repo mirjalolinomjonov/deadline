@@ -23,6 +23,13 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: rgba(255, 255, 255, .87);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promotion__timer .title .deadline-day {
+  color: #938f8f;
 }
 
 .promotion__timer .timer {
@@ -33,7 +40,7 @@ body {
 }
 
 .promotion__timer .timer__block {
-  width: max-content;
+  width: 86px;
   height: 120px;
   padding: 0 12px;
   color: #525252;
@@ -54,25 +61,25 @@ body {
 }
 
 /* CONGURATULATION */
-.conguratulation{
+.conguratulation {
   width: 100%;
   margin-top: 1rem;
   display: none;
 }
 
-.conguratulation__img{
+.conguratulation__img {
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
 
-.conguratulation__img img{
+.conguratulation__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.conguratulation__caption{
+.conguratulation__caption {
   font-size: 1.5rem;
   font-weight: 500;
   color: rgba(255, 255, 255, .87);
@@ -82,4 +89,18 @@ body {
 
 .conguratulation__caption p {
   font-weight: 600;
+}
+
+@media only screen and (max-width:452px) {
+  .promotion__timer .timer__block{
+    width: 75px;
+    height: 114px;
+  }
+  .promotion__timer .timer {
+    gap: .8rem;
+  }
+
+  .promotion__timer .timer__block span {
+    font-size: 42px;
+  }
 }
