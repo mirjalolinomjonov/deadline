@@ -1,9 +1,9 @@
 const deadline = "2023-08-12";
 
 function getTime(endTime) {
-  const total = Date.parse(endTime) - Date.parse(new Date()),
+  const total = Date.parse(endTime) - (Date.parse(new Date()) + 5 * 60 * 60 * 1000),
     days = Math.floor(total / (1000 * 60 * 60 * 24)),
-    hours = Math.floor(((total / (1000 * 60 * 60)) % 24) - 5),
+    hours = Math.floor(((total / (1000 * 60 * 60)) % 24)),
     minutes = Math.floor((total / (1000 * 60)) % 60),
     seconds = Math.floor((total / 1000) % 60);
   return {
@@ -37,7 +37,6 @@ function setClock(selector, endTime) {
     hours.innerHTML = getZero(time.hours);
     minutes.innerHTML = getZero(time.minutes);
     seconds.innerHTML = getZero(time.seconds);
-    console.log(time.total);
     if (time.total <= 0) {
       console.log('stop');
       const conguratulation = document.querySelector('.conguratulation')
